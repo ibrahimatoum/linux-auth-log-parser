@@ -1,0 +1,162 @@
+[
+    {
+        "line_number": 1,
+        "timestamp": "Jun 26 09:01:12",
+        "source_ip": "203.0.113.42",
+        "port": "51234",
+        "username": "root",
+        "event_type": "Failed Login",
+        "severity": "HIGH",
+        "raw": "Jun 26 09:01:12 ubuntu-server sshd[1101]: Failed password for root from 203.0.113.42 port 51234 ssh2"
+    },
+    {
+        "line_number": 2,
+        "timestamp": "Jun 26 09:01:15",
+        "source_ip": "203.0.113.42",
+        "port": "51235",
+        "username": "root",
+        "event_type": "Failed Login",
+        "severity": "HIGH",
+        "raw": "Jun 26 09:01:15 ubuntu-server sshd[1101]: Failed password for root from 203.0.113.42 port 51235 ssh2"
+    },
+    {
+        "line_number": 3,
+        "timestamp": "Jun 26 09:01:18",
+        "source_ip": "203.0.113.42",
+        "port": "51236",
+        "username": "root",
+        "event_type": "Failed Login",
+        "severity": "HIGH",
+        "raw": "Jun 26 09:01:18 ubuntu-server sshd[1101]: Failed password for root from 203.0.113.42 port 51236 ssh2"
+    },
+    {
+        "line_number": 4,
+        "timestamp": "Jun 26 09:01:20",
+        "source_ip": "203.0.113.42",
+        "port": "51237",
+        "username": "admin",
+        "event_type": "Failed Login",
+        "severity": "HIGH",
+        "raw": "Jun 26 09:01:20 ubuntu-server sshd[1101]: Failed password for admin from 203.0.113.42 port 51237 ssh2"
+    },
+    {
+        "line_number": 5,
+        "timestamp": "Jun 26 09:01:22",
+        "source_ip": "198.51.100.77",
+        "port": "44321",
+        "username": "testuser",
+        "event_type": "Failed Login",
+        "severity": "HIGH",
+        "raw": "Jun 26 09:01:22 ubuntu-server sshd[1101]: Invalid user testuser from 198.51.100.77 port 44321 ssh2"
+    },
+    {
+        "line_number": 6,
+        "timestamp": "Jun 26 09:05:44",
+        "source_ip": "192.168.1.10",
+        "port": "52101",
+        "username": "ibrahim",
+        "event_type": "Successful Login",
+        "severity": "MEDIUM",
+        "raw": "Jun 26 09:05:44 ubuntu-server sshd[1102]: Accepted password for ibrahim from 192.168.1.10 port 52101 ssh2"
+    },
+    {
+        "line_number": 7,
+        "timestamp": "Jun 26 09:05:44",
+        "source_ip": null,
+        "port": null,
+        "username": "user",
+        "event_type": "Successful Login",
+        "severity": "MEDIUM",
+        "raw": "Jun 26 09:05:44 ubuntu-server sshd[1102]: pam_unix(sshd:session): session opened for user ibrahim by (uid=0)"
+    },
+    {
+        "line_number": 8,
+        "timestamp": "Jun 26 09:10:01",
+        "source_ip": null,
+        "port": null,
+        "username": null,
+        "event_type": "Privilege Escalation",
+        "severity": "HIGH",
+        "raw": "Jun 26 09:10:01 ubuntu-server sudo:  ibrahim : TTY=pts/0 ; PWD=/home/ibrahim ; USER=root ; COMMAND=/bin/cat /etc/shadow"
+    },
+    {
+        "line_number": 9,
+        "timestamp": "Jun 26 09:15:33",
+        "source_ip": "192.168.1.10",
+        "port": "52200",
+        "username": "ibrahim",
+        "event_type": "Successful Login",
+        "severity": "MEDIUM",
+        "raw": "Jun 26 09:15:33 ubuntu-server sshd[1103]: Accepted publickey for ibrahim from 192.168.1.10 port 52200 ssh2"
+    },
+    {
+        "line_number": 10,
+        "timestamp": "Jun 26 09:20:00",
+        "source_ip": null,
+        "port": null,
+        "username": "user",
+        "event_type": "Successful Login",
+        "severity": "MEDIUM",
+        "raw": "Jun 26 09:20:00 ubuntu-server CRON[1234]: pam_unix(cron:session): session opened for user root by (uid=0)"
+    },
+    {
+        "line_number": 11,
+        "timestamp": "Jun 26 09:20:01",
+        "source_ip": null,
+        "port": null,
+        "username": "user",
+        "event_type": "System Event",
+        "severity": "LOW",
+        "raw": "Jun 26 09:20:01 ubuntu-server CRON[1234]: pam_unix(cron:session): session closed for user root"
+    },
+    {
+        "line_number": 12,
+        "timestamp": "Jun 26 09:25:10",
+        "source_ip": "192.168.1.10",
+        "port": "52101",
+        "username": "ibrahim",
+        "event_type": "System Event",
+        "severity": "LOW",
+        "raw": "Jun 26 09:25:10 ubuntu-server sshd[1105]: Disconnected from user ibrahim 192.168.1.10 port 52101"
+    },
+    {
+        "line_number": 13,
+        "timestamp": "Jun 26 09:30:05",
+        "source_ip": "45.33.32.156",
+        "port": "39812",
+        "username": "invalid",
+        "event_type": "Failed Login",
+        "severity": "HIGH",
+        "raw": "Jun 26 09:30:05 ubuntu-server sshd[1106]: Failed password for invalid user oracle from 45.33.32.156 port 39812 ssh2"
+    },
+    {
+        "line_number": 14,
+        "timestamp": "Jun 26 09:30:06",
+        "source_ip": "45.33.32.156",
+        "port": "39813",
+        "username": "invalid",
+        "event_type": "Failed Login",
+        "severity": "HIGH",
+        "raw": "Jun 26 09:30:06 ubuntu-server sshd[1106]: Failed password for invalid user postgres from 45.33.32.156 port 39813 ssh2"
+    },
+    {
+        "line_number": 15,
+        "timestamp": "Jun 26 09:45:00",
+        "source_ip": "10.0.0.99",
+        "port": null,
+        "username": null,
+        "event_type": "Failed Login",
+        "severity": "HIGH",
+        "raw": "Jun 26 09:45:00 ubuntu-server sshd[1107]: authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.0.99"
+    },
+    {
+        "line_number": 17,
+        "timestamp": "Jun 26 10:00:00",
+        "source_ip": null,
+        "port": null,
+        "username": null,
+        "event_type": "Successful Login",
+        "severity": "MEDIUM",
+        "raw": "Jun 26 10:00:00 ubuntu-server systemd-logind[900]: NEW SESSION 55 OF USER ibrahim"
+    }
+]

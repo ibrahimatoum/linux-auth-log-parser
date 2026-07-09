@@ -1,0 +1,17 @@
+line_number,timestamp,source_ip,port,username,event_type,severity,raw
+1,Jun 26 09:01:12,203.0.113.42,51234,root,Failed Login,HIGH,Jun 26 09:01:12 ubuntu-server sshd[1101]: Failed password for root from 203.0.113.42 port 51234 ssh2
+2,Jun 26 09:01:15,203.0.113.42,51235,root,Failed Login,HIGH,Jun 26 09:01:15 ubuntu-server sshd[1101]: Failed password for root from 203.0.113.42 port 51235 ssh2
+3,Jun 26 09:01:18,203.0.113.42,51236,root,Failed Login,HIGH,Jun 26 09:01:18 ubuntu-server sshd[1101]: Failed password for root from 203.0.113.42 port 51236 ssh2
+4,Jun 26 09:01:20,203.0.113.42,51237,admin,Failed Login,HIGH,Jun 26 09:01:20 ubuntu-server sshd[1101]: Failed password for admin from 203.0.113.42 port 51237 ssh2
+5,Jun 26 09:01:22,198.51.100.77,44321,testuser,Failed Login,HIGH,Jun 26 09:01:22 ubuntu-server sshd[1101]: Invalid user testuser from 198.51.100.77 port 44321 ssh2
+6,Jun 26 09:05:44,192.168.1.10,52101,ibrahim,Successful Login,MEDIUM,Jun 26 09:05:44 ubuntu-server sshd[1102]: Accepted password for ibrahim from 192.168.1.10 port 52101 ssh2
+7,Jun 26 09:05:44,,,user,Successful Login,MEDIUM,Jun 26 09:05:44 ubuntu-server sshd[1102]: pam_unix(sshd:session): session opened for user ibrahim by (uid=0)
+8,Jun 26 09:10:01,,,,Privilege Escalation,HIGH,Jun 26 09:10:01 ubuntu-server sudo:  ibrahim : TTY=pts/0 ; PWD=/home/ibrahim ; USER=root ; COMMAND=/bin/cat /etc/shadow
+9,Jun 26 09:15:33,192.168.1.10,52200,ibrahim,Successful Login,MEDIUM,Jun 26 09:15:33 ubuntu-server sshd[1103]: Accepted publickey for ibrahim from 192.168.1.10 port 52200 ssh2
+10,Jun 26 09:20:00,,,user,Successful Login,MEDIUM,Jun 26 09:20:00 ubuntu-server CRON[1234]: pam_unix(cron:session): session opened for user root by (uid=0)
+11,Jun 26 09:20:01,,,user,System Event,LOW,Jun 26 09:20:01 ubuntu-server CRON[1234]: pam_unix(cron:session): session closed for user root
+12,Jun 26 09:25:10,192.168.1.10,52101,ibrahim,System Event,LOW,Jun 26 09:25:10 ubuntu-server sshd[1105]: Disconnected from user ibrahim 192.168.1.10 port 52101
+13,Jun 26 09:30:05,45.33.32.156,39812,invalid,Failed Login,HIGH,Jun 26 09:30:05 ubuntu-server sshd[1106]: Failed password for invalid user oracle from 45.33.32.156 port 39812 ssh2
+14,Jun 26 09:30:06,45.33.32.156,39813,invalid,Failed Login,HIGH,Jun 26 09:30:06 ubuntu-server sshd[1106]: Failed password for invalid user postgres from 45.33.32.156 port 39813 ssh2
+15,Jun 26 09:45:00,10.0.0.99,,,Failed Login,HIGH,Jun 26 09:45:00 ubuntu-server sshd[1107]: authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.0.99
+17,Jun 26 10:00:00,,,,Successful Login,MEDIUM,Jun 26 10:00:00 ubuntu-server systemd-logind[900]: NEW SESSION 55 OF USER ibrahim
